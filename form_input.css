@@ -16,7 +16,7 @@ body {
 .header {
     border-radius: 30px;
     box-shadow: 10px 10px 10px rgba(21, 255, 0, 0.486);
-    background: url(https://images.pexels.com/photos/257360/pexels-photo-257360.jpeg?cs=srgb&dl=pexels-pixabay-257360.jpg&fm=jpg);
+    background: url(body.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
