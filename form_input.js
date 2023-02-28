@@ -258,3 +258,40 @@ confirm.addEventListener('click', () => {
     document.querySelector('#back').style.display = 'none';
     document.querySelector('#confirm').style.display = 'none';
 })
+sort_value.addEventListener('click', () => {
+
+    for (var i = 0; i < p; i++) {
+        arr_value[i] = parseInt(arr_value[i]);
+    }
+    arr_value = arr_value.sort(); 
+    arr_value = arr_value.sort(function(a, b){return a-b});
+    
+
+
+
+      
+    tbl = `<table border="1" class="table w-100 bg-info">
+            <tr>
+            <th>No.</th>
+            <th>Value</th>
+            </tr>`;
+
+    for (var i = 0; i < n; i++) {
+        tbl += `<tr>
+                    <td>${i + 1}</td>
+                    <td>${arr_value[i]}</td>
+                </tr>`;
+    }
+    tbl += `</table>`;
+    if (n == 0) { alert("No Data") }
+    result.innerHTML = tbl;
+    // alert(2)
+    k = 0;
+
+    document.querySelector('#btn_update').style.display = 'none';
+    document.querySelector('#btn_delete').style.display = 'none';
+    document.querySelector('#index').style.display = 'none';
+    document.querySelector('#box_index').style.display = 'none';
+    document.querySelector('#updateTo').style.display = 'none';
+    document.querySelector('#box_update').style.display = 'none';
+})
